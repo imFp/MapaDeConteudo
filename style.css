@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #421E66
+}
+
+.logo {
+    user-select: none;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 10%;
+    pad: 20px;
+}
+
+.main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+  }
+  
+  .titulo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart1,
+  .heart2 {
+    margin: 0 5px;
+  }
+
+.gerencie {
+    margin-top: -43px;
+    margin-left: 110px;
+}
+
+.vector2 {
+    margin-right: 400px;
+    margin-top: 12px;
+    width: 50px;
+
+}
+
+.login-box {
+    border: 3px solid #2b1343;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    width: 430px;
+    height: 470px;
+    position: absolute;
+    right: 720px;
+}
+
+.login-box * {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.login-box .form-box-login {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box-login h2 {
+    font-size: 2em;
+    color: #421E66;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #A7A7A7;
+    margin: 15px;
+    transition: .5s;
+    right: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #A7A7A7;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+.input-box input:focus {
+    border-color: #2b1343;
+    outline: 2px solid #2b1343;
+    color: #2b1343
+}
+
+.input-box input:focus~label
+ {
+    top: -1px;
+    color: #2b1343;
+}
+
+.input-box input:valid~label {
+    top: -1px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-image: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 1px 17px 1px;
+}
+
+.forgot {
+    color: #A7A7A7;
+    font-size: .9em;
+    font-weight: 500;
+
+}
+
+.forgot-link {
+    font-size: 1em;
+    font-weight: 500;
+    color: #421E66;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.forgot-link:hover {
+    text-decoration:underline;
+    color: #2a1441;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #2E1844;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 30px;
+    transition: .5s;
+
+}
+
+.btn:hover {
+    background-color: #773ab4;
+    cursor: pointer;
+}
+
+.register-link {
+    font-size: 1em;
+    font-weight: 500;
+    color: #421E66;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.register {
+    color: #A7A7A7;
+    font-size: .9em;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.register-link:hover {
+    text-decoration:underline;
+    color: #2a1441;
+}
+
+.vector1 {
+    position: absolute;
+    right: 910px;
+    width: 65px;
+    margin-top: 440px;
+}
+
+.remember {
+    color: #A7A7A7;
+    font-size: .9em;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin: 0 0px;
+}
+
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .5s;
+    border-radius: 34px;
+}
+
+.switch input {display:none}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked + .slider {
+    background-color: #421E66
+}
+
+input:checked + .slider:before {
+    transform: translateX(29px);
+}
+
